@@ -1,1 +1,1 @@
-# CodingDojo-WebFun
+# WebFun
