@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2" class="title">My Registration Form</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td></td><td></td></tr>
+            <tr>
+                <td class="left">
+                    <label for="fname">First Name:</label>
+                </td>
+                <td class="right">
+                    <input type="text" id="fname" name="fname" minlength="2" size="30" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="left">
+                    <label for="lname">Last Name:</label>
+                </td>
+                <td class="right">
+                    <input type="text" id="lname" name="lname" minlength="2" size="30" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="left">
+                    <label for="email">Email:</label>
+                </td>
+                <td class="right">
+                    <input type="email" id="email" size="30" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="left">
+                    <label for="password">Password:</label>
+                </td>
+                <td class="right">
+                    <input type="password" id="password" name="password" minlength="8" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="left">
+                    <label for="password2">PW Confirm:</label>
+                </td>
+                <td class="right">
+                    <input type="password" id="password2" name="password2" minlength="8" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="left">
+                    <label for="birthday">Birthday:</label>
+                </td>
+                <td class="right">
+                    <input type="date" id="birthday" name="birthday" min="1900-01-01">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="gender">
+                        <div class="male">
+                            <input type="radio" id="male" name="boy" value="male">
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="female">
+                            <input type="radio" id="female" name="girl" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="other">
+                            <input type="radio" id="other" name="other" value="other">
+                            <label for="other">Other</label>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="registrant-description">A short description about yourself:</label><br>
+                    <textarea id="registrant-description" name="registrant-description" rows="5" cols="45" placeholder="Describe yourself here...">
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="favorite-language">Favorite Language</label>
+                    &nbsp;
+                    <select name="favorite-language" id="favorite-language">
+                    <!--<option value="">--Please choose an option--</option>-->
+                    <option value="javascript">JavaScript</option>
+                    <option value="java">Java</option>
+                    <option value="c#">C#</option>
+                    <option value="php">PHP</option>
+                    <option value="python">Python</option>
+                    <option value="ruby">Ruby</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="btn"><button>Submit</button></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

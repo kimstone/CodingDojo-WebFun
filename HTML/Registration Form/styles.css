@@ -1,0 +1,46 @@
+body {
+    font-family: 'fira code', verdana;
+    font-weight: 400;
+    size: 18px;
+    line-height: 1.4;
+}
+table {
+    margin: 20px auto;
+}
+tr {
+    border: 2px solid black;
+}
+td {
+    border: 0px solid #333;
+    padding: 5px 10px;
+}
+td.left {
+    padding: 5px 5px 5px 10px;
+}
+td.right {
+    padding: 5px 10px 5px 5px;
+}
+thead {
+    background-color: gray;
+    color: #fff;
+}
+tfoot {
+    background-color: #E0E0E0;
+    color: #fff;
+}
+.btn {
+    text-align: left;
+}
+button {
+    padding: 5px 10px;
+}
+.gender { 
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.male,
+.female,
+.other {
+    padding-right: 12px;
+}
