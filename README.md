@@ -1,3 +1,6 @@
+# TIPS
+- Validate HTML: https://validator.w3.org/
+
 # PCS_Assignment
 
 # Registration Form
