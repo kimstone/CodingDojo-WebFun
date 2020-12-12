@@ -1,11 +1,222 @@
 *{
     margin: 0;
     padding: 0;
-    outline: 1px dotted red;
+    outline: 0px dashed #F3A5A5;
 }
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.4;
+}
+h1, h2, h3, h4, h5, h6 { font-weight: 600; }
+h5 { font-size: 18px; }
+a {
+    color: #76a9d6;
+}
+a:hover {
+    color: #FFD20A;
+}
+.container {
+    width: 970px;
+    margin: 0 auto;
+}
+.upper-wrapper {
+    background-color: #245076;
+    padding: 10px;
+    border-right: 1px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~
+        HEADER
+    ~~~~~~~~~~~~~~~~~~~~~~~
+*/
+.header > p {
+    text-align: right;
+    color: #FFFFFF;
+    font-size: 90%;
+}
+.header > p a {
+    color: #FFD20A;
+}
+.header > p a:hover {
+    color: #76a9d6;
+}
+.logo-bar {
+    display: flex;
+    justify-content: space-between;
+}
+.logo-bar > img {
+    width: 340px;
+}
+.search{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #444444;
+    padding: 15px 7px 4px 10px;
+    margin-top: 5px;
+    box-shadow: 2px 2px 2px black;
+    text-align: center;
+    vertical-align: top;
+}
+.search input{
+    text-align: center;
+    padding: 10px;
+    border: 2px solid silver;
+    box-shadow: 1px 1px 1px black;
+}
+.search button{
+    color: white;
+    text-align: center;
+    margin-left: 5px;
+    padding: 6px 8px;
+    border-radius: 5px;
+    background-color: #245176;
+    box-shadow: 1px 1px 1px black;
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+}
+ul.nav {
+    list-style-type: none;
+    padding: 10px;
+    margin: 20px 40px 20px 70px;
+    background-color: #487ead;
+    border-radius: 5px;
+    font-size: 125%;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+ul.nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 700;
+    font-style: bold;
+}
+ul.nav a:hover {
+    color: #FFD20A;
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~
+        PYTHON MAIN
+    ~~~~~~~~~~~~~~~~~~~~~~~
+*/
+.python-main {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 40px 00px 70px;
+}
+.python-main > ul {
+    list-style-type: none;
+    color: #FFFFFF;
+    text-align: center;
+}
+.python-main > ul li:before {
+    content: "\00BB \0020";
+    color: #FFD20A;
+}
+.python-main > div  p {
+    color: #FFFFFF;
+    text-align: center;
+}
+.python-features {
+    color: #FFD20A;
+    text-align: center;
+    font-style: italic;
+}
+.python-zen {
+    color: #FFFFFF;
+}
+ul.quick-links li {
+    padding: 4px 0;
+}
+ul.quick-links li a {
+    color: #FFFFFF;
+}
+ul.quick-links li a:hover {
+    color: #FFD20A;
+}
+.python-main > div {
+    width: 70%;
+}
+.python-main > div ul {
+    list-style-type: none;
+    width: 70%;
+    margin: 10px auto;
+}
+.python-main > div ul li {
+    padding: 2px 0px;
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~
+        HELPFUL LINKS
+    ~~~~~~~~~~~~~~~~~~~~~~~
+*/
+.helpful-links {
+    display: flex;
+    font-size: 90%;
+}
+.get-started,
+.apps {
+    padding: 15px;
+}
+.get-started > h5, .apps > h5 {
+    text-align: center;
+    padding: 5px 0px;
+}
+.get-started > p, .apps > p {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+.internal-link {
+    font-size: 80%;
+}
+.internal-link a {
+    text-decoration: none;
+}
+hr {
+    border: 2px solid #73a7d5;
+}
+.get-started > hr {
+    margin-left: 10%;
+}
+.apps > hr {
+    margin-right: 10%;
+}
+.get-started > ul,
+.apps > ul {
+    list-style-type: square;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+.get-started > ul li,
+.apps > ul li {
+    padding: 2px 0px;
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~
+        FOOTER
+    ~~~~~~~~~~~~~~~~~~~~~~~
+*/
+.footer {
+    background-image: linear-gradient(180deg, #245177, #5293CB);
+    color: #ABCEED;
+    text-align: center;
+}
+.footer a {
+    text-decoration: none;
+}
+.footer > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 5px;
+}
+.footer > ul li {
+    padding: 0 35px;
+}
+.footer > p {
+    padding: 10px 10px 5px;
+    font-size: 80%;
 }
