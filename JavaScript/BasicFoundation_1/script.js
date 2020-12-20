@@ -6,7 +6,15 @@ function clearConsole(){
 function challenge06() {
     clearConsole();
 
-    
+    let arrX = [1, 3, 5, 7, 20];
+    let len = arrX.length -1;
+    let avgValue;
+    let sum = 0;
+    for (let n = 0; n <= len; n+=1) {
+        sum+=arrX[n];
+    }
+    avgValue = sum/arrX.length;
+    console.log(`Average value is: ${avgValue}`);
 }
 
 
