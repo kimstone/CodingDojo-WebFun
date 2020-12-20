@@ -3,6 +3,20 @@ function clearConsole(){
     console.clear();
 }
 
+function challenge10() {
+    clearConsole();
+
+    let arrX = [1, 5, 10, -2];
+    for (let n = 0; n <= arrX.length -1; n+=1) {
+        if (arrX[n] < 0) {
+            arrX[n] = 0;
+        }
+    }
+    console.log(arrX);
+
+}
+
+
 function challenge09() {
     clearConsole();
 
