@@ -3,6 +3,20 @@ function clearConsole(){
     console.clear();
 }
 
+function challenge07() {
+    clearConsole ();
+
+    let arrZ = [];
+    for (let n = 1; n <= 50; n+=1) {
+        if (n % 2 != 0) {
+            arrZ.push(n);
+        }
+    }
+    console.log(`The new array is: ${arrZ}`);
+    return arrZ;
+}
+
+
 function challenge06() {
     clearConsole();
 
@@ -15,6 +29,7 @@ function challenge06() {
     }
     avgValue = sum/arrX.length;
     console.log(`Average value is: ${avgValue}`);
+    return avgValue;
 }
 
 
