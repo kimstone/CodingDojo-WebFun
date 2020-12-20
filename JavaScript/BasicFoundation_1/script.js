@@ -3,6 +3,31 @@ function clearConsole(){
     console.clear();
 }
 
+function challenge11() {
+    clearConsole();
+
+    let arrX = [1, 5, 10, -2];
+    let arrAgg = [];
+    let maxValue = arrX[0];
+    let minValue = arrX[0];
+    let sum = 0;
+    for (let n = 0; n <= (arrX.length - 1); n+=1) {
+        if (arrX[n] > maxValue) {
+            maxValue = arrX[n];
+        }
+        if (arrX[n] < minValue) {
+            minValue = arrX[n];
+        }
+        sum+=arrX[n];
+    }
+    arrAgg.push(maxValue);
+    arrAgg.push(minValue);
+    arrAgg.push(sum/arrX.length);
+    console.log(arrX);
+    console.log(arrAgg)
+}
+
+
 function challenge10() {
     clearConsole();
 
