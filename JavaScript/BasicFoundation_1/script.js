@@ -3,6 +3,19 @@ function clearConsole(){
     console.clear();
 }
 
+function challenge12() {
+    clearConsole();
+
+    let arrX = [1, 5, 10, -2];
+    let first = arrX[0];
+    let last = arrX[arrX.length-1];
+    arrX[0] = last;
+    arrX[arrX.length-1] = first;
+    console.log(arrX);
+}
+
+
+
 function challenge11() {
     clearConsole();
 
