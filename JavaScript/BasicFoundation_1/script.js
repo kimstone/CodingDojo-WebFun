@@ -3,10 +3,25 @@ function clearConsole(){
     console.clear();
 }
 
+function challenge06() {
+    clearConsole();
+
+    
+}
+
+
 function challenge05() {
     clearConsole();
 
-
+    let arrA = [-3,12,0,5,7];
+    let len = arrA.length - 1;
+    let maxValue = arrA[0];
+    for (let n = 0; n <= len; n+=1) {
+        if (arrA[n] > maxValue) {
+            maxValue = arrA[n];
+        }
+    }
+    console.log(`Max Value is: ${maxValue}`);
 }
 
 
