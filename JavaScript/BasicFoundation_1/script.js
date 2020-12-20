@@ -3,6 +3,17 @@ function clearConsole(){
     console.clear();
 }
 
+function challenge09() {
+    clearConsole();
+
+    let arrValues = [1, 5, 10, -2];
+    for (let n = 0; n <= arrValues.length -1; n+=1) {
+        arrValues[n] = arrValues[n] * arrValues[n];
+    }
+    console.log(arrValues);
+}
+
+
 function challenge08() {
     clearConsole ();
 
