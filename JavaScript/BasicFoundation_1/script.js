@@ -3,6 +3,38 @@ function clearConsole(){
     console.clear();
 }
 
+function challenge08() {
+    clearConsole ();
+
+    let arrX = [1,3,5,7];
+    let len = arrX.length -1;
+    let cntr = 0;
+    let theValues = '';
+    let y = prompt("Please enter a number");
+    for (let n = 0; n <= len; n+=1) {
+        if (arrX[n] > y) {
+            cntr+=1;
+            theValues+=arrX[n].toString().concat(", ");
+        }
+    }
+    theValues = theValues.slice(0, -2);
+    console.log(`The array: ${arrX}`);
+    console.log(`Number of Values > Y: ${cntr}`);
+    switch (true) {
+        case (cntr <= 0):
+            console.log(`There are no values in the array greater than ${y}.`);
+            break;
+        case (cntr === 1):
+            console.log(`There is ${cntr} value in the array greater than ${y}, it is ${theValues}.`);
+            break;
+        case (cntr >1):
+            console.log(`There are ${cntr} values in the array greater than ${y}, which are ${theValues}.`);
+            break;
+    }
+    return cntr;
+}
+
+
 function challenge07() {
     clearConsole ();
 
