@@ -3,6 +3,20 @@ function clearConsole(){
     console.clear();
 }
 
+
+function challenge13() {
+    clearConsole();
+
+    let arrX = [-3, -1, 2];
+    for (let n = 0; n <= arrX.length -1; n+=1) {
+        if (arrX[n] < 0) {
+            arrX[n] = 'Dojo';
+        }
+    }
+    console.log(arrX);
+}
+
+
 function challenge12() {
     clearConsole();
 
@@ -13,7 +27,6 @@ function challenge12() {
     arrX[arrX.length-1] = first;
     console.log(arrX);
 }
-
 
 
 function challenge11() {
